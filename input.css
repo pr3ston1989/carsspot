@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('bebasneue-regular-webfont.woff2') format('woff2'),
+         url('bebasneue-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'roboto_condensedregular';
+    src: url('robotocondensed-variablefont_wght-webfont.woff2') format('woff2'),
+         url('robotocondensed-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'roboto_flexregular';
+    src: url('robotoflexgradxopqxtrayopqytasytdeytfiytlcytucopszslntwdthwght-webfont.woff2') format('woff2'),
+         url('robotoflexgradxopqxtrayopqytasytdeytfiytlcytucopszslntwdthwght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
