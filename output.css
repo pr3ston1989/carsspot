@@ -554,45 +554,218 @@ video {
   --tw-contain-style:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.left-\[378px\] {
+  left: 378px;
+}
+
+.left-\[910px\] {
+  left: 910px;
+}
+
+.right-\[70px\] {
+  right: 70px;
+}
+
+.top-\[408px\] {
+  top: 408px;
+}
+
+.top-\[462px\] {
+  top: 462px;
+}
+
+.-z-10 {
+  z-index: -10;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mb-9 {
+  margin-bottom: 2.25rem;
+}
+
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.mb-\[76px\] {
+  margin-bottom: 76px;
+}
+
+.mb-\[78px\] {
+  margin-bottom: 78px;
+}
+
+.mb-\[72px\] {
+  margin-bottom: 72px;
 }
 
 .flex {
   display: flex;
 }
 
-.h-16 {
-  height: 4rem;
+.h-2\/3 {
+  height: 66.666667%;
+}
+
+.h-20 {
+  height: 5rem;
 }
 
 .h-6 {
   height: 1.5rem;
 }
 
-.w-3\/4 {
-  width: 75%;
+.h-\[168px\] {
+  height: 168px;
 }
 
-.w-5\/6 {
-  width: 83.333333%;
+.h-\[343px\] {
+  height: 343px;
+}
+
+.h-\[404px\] {
+  height: 404px;
+}
+
+.h-\[446px\] {
+  height: 446px;
+}
+
+.h-\[825px\] {
+  height: 825px;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-\[678px\] {
+  height: 678px;
+}
+
+.max-h-\[659px\] {
+  max-height: 659px;
+}
+
+.w-1\/4 {
+  width: 25%;
+}
+
+.w-\[1064px\] {
+  width: 1064px;
+}
+
+.w-\[600px\] {
+  width: 600px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-1200 {
+  max-width: 1200px;
+}
+
+.max-w-1440 {
+  max-width: 1440px;
+}
+
+.max-w-\[1064px\] {
+  max-width: 1064px;
+}
+
+.max-w-\[1264px\] {
+  max-width: 1264px;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
   justify-content: space-between;
 }
 
-.gap-2\.5 {
-  gap: 0.625rem;
+.gap-12 {
+  gap: 3rem;
 }
 
 .gap-6 {
   gap: 1.5rem;
 }
 
+.gap-8 {
+  gap: 2rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-\[3px\] {
+  gap: 3px;
+}
+
+.gap-\[2px\] {
+  gap: 2px;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-\[\#0147FF\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(1 71 255 / var(--tw-border-opacity));
 }
 
 .bg-\[\#0147FF\] {
@@ -610,6 +783,11 @@ video {
   padding-right: 1.5rem;
 }
 
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -620,8 +798,102 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-\[120px\] {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.px-32 {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-bebas {
+  font-family: bebas_neueregular, sans-serif;
+}
+
+.font-roboto-condensed {
+  font-family: roboto_condensedregular, sans-serif;
+}
+
+.font-roboto-flex {
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.text-15px {
+  font-size: 15px;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-\[21\.5px\] {
+  font-size: 21.5px;
+}
+
+.text-\[40px\] {
+  font-size: 40px;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
 .font-semibold {
   font-weight: 600;
+}
+
+.leading-22\.5 {
+  line-height: 22.5px;
+}
+
+.leading-6 {
+  line-height: 1.5rem;
+}
+
+.leading-\[24px\] {
+  line-height: 24px;
+}
+
+.leading-\[32\.25px\] {
+  line-height: 32.25px;
+}
+
+.leading-\[48px\] {
+  line-height: 48px;
+}
+
+.leading-\[84px\] {
+  line-height: 84px;
+}
+
+.tracking-tight-custom-02 {
+  letter-spacing: -0.02em;
+}
+
+.tracking-tight-custon-04 {
+  letter-spacing: -0.04em;
+}
+
+.text-\[\#0147FF\] {
+  --tw-text-opacity: 1;
+  color: rgb(1 71 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#282828\] {
+  --tw-text-opacity: 1;
+  color: rgb(40 40 40 / var(--tw-text-opacity));
 }
 
 .text-\[\#F7F7F7\] {
@@ -629,11 +901,39 @@ video {
   color: rgb(247 247 247 / var(--tw-text-opacity));
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.underline-offset-4 {
+  text-underline-offset: 4px;
+}
+
+.opacity-70 {
+  opacity: 0.7;
+}
+
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.brightness-150 {
+  --tw-brightness: brightness(1.5);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 @font-face {
   font-family: 'bebas_neueregular';
 
-  src: url('bebasneue-regular-webfont.woff2') format('woff2'),
-         url('bebasneue-regular-webfont.woff') format('woff');
+  src: url('./fonts/BebasNeue-Regular.woff2') format('woff2'),
+    url('./fonts/BebasNeue-Regular.woff') format('woff');
 
   font-weight: normal;
 
@@ -643,8 +943,9 @@ video {
 @font-face {
   font-family: 'roboto_condensedregular';
 
-  src: url('robotocondensed-variablefont_wght-webfont.woff2') format('woff2'),
-         url('robotocondensed-variablefont_wght-webfont.woff') format('woff');
+  src: url('./fonts/robotocondensed-variablefont_wght-webfont.woff2')
+      format('woff2'),
+    url('./fonts/robotocondensed-variablefont_wght-webfont.woff') format('woff');
 
   font-weight: normal;
 
@@ -652,12 +953,14 @@ video {
 }
 
 @font-face {
-  font-family: 'roboto_flexregular';
+  font-family: 'Roboto Flex';
 
-  src: url('robotoflexgradxopqxtrayopqytasytdeytfiytlcytucopszslntwdthwght-webfont.woff2') format('woff2'),
-         url('robotoflexgradxopqxtrayopqytasytdeytfiytlcytucopszslntwdthwght-webfont.woff') format('woff');
+  src: url('./fonts/RobotoFlex-Regular.woff2') format('woff2'),
+    url('./fonts/RobotoFlex-Regular.woff') format('woff');
 
   font-weight: normal;
 
   font-style: normal;
+
+  font-display: swap;
 }
