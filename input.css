@@ -27,3 +27,23 @@
   font-style: normal;
   font-display: swap;
 }
+
+.swiper {
+  @apply max-w-[1264px] h-[678px] mx-auto py-[80px] !important;
+}
+
+.swiper-wrapper {
+  @apply max-w-[1264px] h-full !important;
+}
+
+.swiper-slide {
+  @apply w-[600px] h-[446px] !important;
+}
+
+.slide {
+  @apply w-full h-full object-cover !important;
+}
+
+.swiper-pagination {
+  @apply mb-[81px] flex gap-[3px] justify-center !important;
+}
