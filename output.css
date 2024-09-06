@@ -566,12 +566,12 @@ video {
   left: 376px;
 }
 
-.left-\[908px\] {
-  left: 908px;
+.left-\[698px\] {
+  left: 698px;
 }
 
-.right-\[72px\] {
-  right: 72px;
+.left-\[908px\] {
+  left: 908px;
 }
 
 .top-\[408px\] {
@@ -595,6 +595,10 @@ video {
   margin-right: auto;
 }
 
+.ml-0\.5 {
+  margin-left: 0.125rem;
+}
+
 .flex {
   display: flex;
 }
@@ -607,36 +611,16 @@ video {
   height: 66.666667%;
 }
 
-.h-20 {
-  height: 5rem;
-}
-
 .h-6 {
   height: 1.5rem;
-}
-
-.h-\[168px\] {
-  height: 168px;
 }
 
 .h-\[185px\] {
   height: 185px;
 }
 
-.h-\[343px\] {
-  height: 343px;
-}
-
 .h-\[361px\] {
   height: 361px;
-}
-
-.h-\[404px\] {
-  height: 404px;
-}
-
-.h-\[47px\] {
-  height: 47px;
 }
 
 .h-\[72px\] {
@@ -651,24 +635,20 @@ video {
   height: auto;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .max-h-\[659px\] {
   max-height: 659px;
 }
 
+.max-h-\[79px\] {
+  max-height: 79px;
+}
+
 .w-1\/4 {
   width: 25%;
-}
-
-.w-\[1064px\] {
-  width: 1064px;
-}
-
-.w-\[148px\] {
-  width: 148px;
-}
-
-.w-\[158px\] {
-  width: 158px;
 }
 
 .w-\[576px\] {
@@ -679,8 +659,16 @@ video {
   width: 58px;
 }
 
+.w-auto {
+  width: auto;
+}
+
 .w-full {
   width: 100%;
+}
+
+.w-\[59px\] {
+  width: 59px;
 }
 
 .max-w-1200 {
@@ -697,6 +685,15 @@ video {
 
 .max-w-\[1264px\] {
   max-width: 1264px;
+}
+
+.max-w-\[576px\] {
+  max-width: 576px;
+}
+
+.rotate-180 {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .flex-col {
@@ -795,11 +792,6 @@ video {
   padding-right: 120px;
 }
 
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -827,10 +819,6 @@ video {
 
 .pb-1\.5 {
   padding-bottom: 0.375rem;
-}
-
-.pl-1 {
-  padding-left: 0.25rem;
 }
 
 .pt-20 {
@@ -873,11 +861,6 @@ video {
   font-size: 76px;
 }
 
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -885,10 +868,6 @@ video {
 
 .font-bold {
   font-weight: 700;
-}
-
-.font-medium {
-  font-weight: 500;
 }
 
 .font-normal {
@@ -899,12 +878,20 @@ video {
   font-weight: 600;
 }
 
+.leading-22\.5 {
+  line-height: 22.5px;
+}
+
 .leading-6 {
   line-height: 1.5rem;
 }
 
 .leading-\[21px\] {
   line-height: 21px;
+}
+
+.leading-\[22\.5px\] {
+  line-height: 22.5px;
 }
 
 .leading-\[24px\] {
@@ -927,20 +914,28 @@ video {
   line-height: 84px;
 }
 
+.tracking-\[-0\.02em\] {
+  letter-spacing: -0.02em;
+}
+
 .tracking-\[-0\.03em\] {
   letter-spacing: -0.03em;
 }
 
-.tracking-normal {
-  letter-spacing: 0em;
+.tracking-tight-custom-02 {
+  letter-spacing: -0.02em;
 }
 
 .tracking-tight-custon-04 {
-  letter-spacing: -0.038em;
+  letter-spacing: -0.04em;
 }
 
 .tracking-tighter {
   letter-spacing: -0.05em;
+}
+
+.tracking-tight-custom-03 {
+  letter-spacing: -0.03em;
 }
 
 .text-\[\#0147FF\] {
@@ -1030,7 +1025,7 @@ video {
 
 .swiper-wrapper {
   height: 100% !important;
-  max-width: 1264px !important;
+  max-width: 100% !important;
 }
 
 .swiper-slide {
@@ -1050,7 +1045,7 @@ video {
   display: flex !important;
   justify-content: center !important;
   gap: 3px !important;
-  opacity: 0.5 !important;
+  opacity: 0.6 !important;
 }
 
 .link-active {
@@ -1058,6 +1053,7 @@ video {
   font-size: 15px;
   font-weight: 600;
   line-height: 22.5px;
+  letter-spacing: -0.02em;
   --tw-text-opacity: 1;
   color: rgb(1 71 255 / var(--tw-text-opacity));
   text-decoration-line: underline;
@@ -1073,12 +1069,18 @@ video {
   font-size: 15px;
   font-weight: 400;
   line-height: 22.5px;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.02em;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .link-not-active:hover {
+  cursor: pointer;
+  text-decoration-line: underline;
+  text-underline-offset: 4px;
+}
+
+.hover\:cursor-pointer:hover {
   cursor: pointer;
 }
 
@@ -1105,16 +1107,8 @@ video {
   background-color: rgb(247 247 247 / var(--tw-bg-opacity));
 }
 
-.hover\:font-medium:hover {
-  font-weight: 500;
-}
-
 .hover\:tracking-tight-custom-02:hover {
-  letter-spacing: -0.006em;
-}
-
-.hover\:tracking-tight-custom-03:hover {
-  letter-spacing: -0.036em;
+  letter-spacing: -0.02em;
 }
 
 .hover\:text-\[\#0149ff\]:hover {
