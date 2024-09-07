@@ -2,8 +2,13 @@ function initializeSwiper(galleryId) {
   new Swiper(galleryId, {
     direction: 'horizontal',
     loop: true,
-    slidesPerView: 2,
-    spaceBetween: 64,
+    slidesPerView: 1,
+    breakpoints: {
+      1280: {
+        slidesPerView: 2,
+        spaceBetween: 64,
+      },
+    },
     pagination: {
       el: '.swiper-pagination',
       clickable: true,

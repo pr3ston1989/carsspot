@@ -29,7 +29,7 @@
 }
 
 .swiper {
-  @apply max-w-[1264px] h-[678px] mx-auto py-[80px] xl:overflow-visible !important;
+  @apply max-w-[1264px] xl:h-[678px] mx-auto py-6 xl:py-[80px] xl:overflow-visible !important;
 }
 
 .swiper-wrapper {
@@ -37,15 +37,15 @@
 }
 
 .swiper-slide {
-  @apply w-[600px] h-[446px] !important;
+  @apply flex justify-center items-center xl:block xl:w-[600px] xl:h-[446px] !important;
 }
 
 .slide {
-  @apply w-full h-full object-cover !important;
+  @apply h-auto w-full xl:h-full object-cover !important;
 }
 
 .swiper-pagination {
-  @apply mb-[81px] flex gap-[3px] justify-center opacity-60 !important;
+  @apply xl:mb-[81px] flex gap-[3px] justify-center opacity-60 !important;
 }
 
 .link-active {
