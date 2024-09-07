@@ -21,25 +21,25 @@
       <img
         src="./images/wave.svg"
         alt=""
-        class="-z-10 absolute max-h-[659px] w-auto left-[698px]"
+        class="-z-10 absolute hidden xl:h-[659px] w-auto xl:left-[698px]"
       />
       <img
         src="./images/hero.png"
         alt="cars"
-        class="max-w-[1064px] h-auto absolute top-[408px] left-[376px] brightness-150"
+        class="sm:w-1/2 xl:w-[1064px] h-auto absolute sm:left-1/2 top-[408px] xl:left-[376px] brightness-150"
       />
       <img
         src="./images/rectangle.svg"
         alt=""
-        class="absolute -z-10 top-[462px] left-[908px]"
+        class="absolute -z-10 top-[462px] hidden xl:block xl:left-[908px]"
       />
       <img
         src="./images/shadow.png"
         alt="cars shadow"
-        class="max-w-[1064px] h-auto absolute top-[408px] left-[376px] opacity-70"
+        class="sm:w-1/2 xl:w-[1064px] h-auto absolute sm:left-1/2 top-[408px] xl:left-[376px] opacity-70"
       />
       <div
-        class="flex m-auto justify-between items-center py-4 max-w-1200 max-h-[79px]"
+        class="flex mx-6 xl:m-auto justify-between items-center py-4 max-w-1200"
       >
         <div class="w-1/4 h-2/3">
           <a href="#"><img src="./images/logo.svg" alt="logo" /> </a>
@@ -65,16 +65,18 @@
         <div class="w-1/4 flex justify-end">
           <a
             href="tel:+1234567890"
-            class="text-[#F7F7F7] text-15px text-center leading-[22.5px] h-full tracking-[-0.02em] font-roboto-flex font-semibold bg-[#0149ff] hover:bg-[#F7F7F7] hover:tracking-tight-custom-02 hover:text-[#0149ff] hover:border-[1px] hover:border-[#0147FF] rounded-lg py-3 px-6"
+            class="text-[#F7F7F7] text-15px text-center leading-[22.5px] h-full tracking-tight-custom-02 font-roboto-flex font-semibold bg-[#0149ff] xl:hover:bg-[#F7F7F7] xl:hover:text-[#0149ff] xl:hover:border-[1px] xl:hover:border-[#0147FF] rounded-lg py-3 px-6"
             >Zadzwoń do nas</a
           >
         </div>
       </div>
     </header>
 
-    <section class="max-w-1440 h-[825px] py-[120px] mx-auto relative">
-      <div class="mx-auto max-w-1200 h-auto flex flex-col gap-12">
-        <div class="w-full h-auto flex flex-col gap-8">
+    <section
+      class="max-w-1440 xl:h-[825px] pb-6 xl:py-[120px] mx-auto relative"
+    >
+      <div class="max-w-1200 h-auto flex flex-col gap-12 mx-6 xl:mx-auto">
+        <div class="w-full h-auto flex flex-col gap-3 xl:gap-8">
           <h1
             class="font-bebas w-full tracking-tight-custon-04 leading-[84px] font-normal text-[76px] text-[#282828]"
           >
@@ -86,7 +88,9 @@
             była wyjątkowym przeżyciem.
           </p>
         </div>
-        <div class="flex gap-6 w-full">
+        <div
+          class="flex gap-6 w-full pt-28 justify-between xl:justify-start xl:pt-0"
+        >
           <a
             href="#gallery"
             class="text-[#F7F7F7] text-15px text-center leading-22.5 tracking-tight-custom-02 font-roboto-flex font-semibold bg-[#0147FF] rounded-lg py-3 px-6 hover:bg-[#F7F7F7] hover:text-[#0149ff] hover:border-[1px] hover:border-[#0147FF]"
@@ -94,15 +98,17 @@
           >
           <a
             href="tel:+1234567890"
-            class="text-[#0147FF] text-15px text-center leading-22.5 tracking-tight-custom-02 font-roboto-flex font-semibold border-[1px] border-[#0147FF] rounded-lg py-3 px-6 hover:text-white hover:bg-[#0147FF] hover:border-0"
+            class="text-[#0147FF] bg-[#F7F7F7] text-15px text-center leading-22.5 tracking-tight-custom-02 font-roboto-flex font-semibold border-[1px] border-[#0147FF] rounded-lg py-3 px-6 xl:hover:text-white xl:hover:bg-[#0147FF] xl:hover:border-0"
             >Zadzwoń do nas</a
           >
         </div>
       </div>
     </section>
 
-    <section id="gallery" class="max-w-1440 mx-auto pt-20">
-      <div class="max-w-[1264px] mx-auto flex flex-col gap-6">
+    <section id="gallery" class="max-w-1440 mx-auto pt-6 xl:pt-20">
+      <div
+        class="max-w-[1264px] mx-auto flex flex-col items-center xl:items-start gap-6"
+      >
         <div>
           <p
             class="font-roboto-condensed text-[21.5px] leading-[32.25px] text-[#0147FF]"
@@ -216,7 +222,9 @@
     </section>
 
     <section class="max-w-1440 mx-auto py-[88px] bg-[#282828]">
-      <div class="max-w-1200 flex mx-auto justify-between">
+      <div
+        class="max-w-1200 flex flex-col gap-6 xl:gap-0 xl:flex-row mx-6 xl:mx-auto items-center justify-between"
+      >
         <div class="max-w-[576px] flex flex-col gap-4">
           <h3
             class="font-bebas text-[25px] text-white leading-[37.5px] tracking-tight-custom-03"
@@ -302,7 +310,7 @@
       </div>
     </section>
     <footer
-      class="max-w-1440 bg-[#282828] border-t-[1px] border-white flex justify-between mx-auto py-6 px-[120px]"
+      class="max-w-1440 bg-[#282828] border-t-[1px] border-white flex justify-between mx-auto py-4 xl:py-6 px-6 xl:px-[120px]"
     >
       <a
         href="#"

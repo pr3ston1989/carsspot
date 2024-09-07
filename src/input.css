@@ -29,7 +29,7 @@
 }
 
 .swiper {
-  @apply max-w-[1264px] h-[678px] mx-auto py-[80px] overflow-visible !important;
+  @apply max-w-[1264px] h-[678px] mx-auto py-[80px] xl:overflow-visible !important;
 }
 
 .swiper-wrapper {
