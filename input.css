@@ -49,13 +49,30 @@
 }
 
 .link-active {
-  @apply font-roboto-flex font-semibold leading-22.5 -tracking-tight-0.02 text-15px text-[#0147FF] underline underline-offset-4 hover:cursor-pointer;
+  @apply font-roboto-flex font-semibold leading-5.5 -tracking-tight-0.02 text-15px text-[#0147FF] underline underline-offset-4 hover:cursor-pointer;
 }
 
 .link-not-active {
-  @apply font-roboto-flex font-normal leading-22.5 -tracking-tight-0.02 text-15px text-black hover:cursor-pointer hover:underline hover:underline-offset-4;
+  @apply font-roboto-flex font-normal leading-5.5 -tracking-tight-0.02 text-15px text-black hover:cursor-pointer hover:underline hover:underline-offset-4;
 }
 
 #hamburger {
   @apply block cursor-pointer;
+}
+
+.btn-main,
+.btn-secondary {
+  @apply text-15px text-center leading-5.5 -tracking-tight-0.02 font-roboto-flex font-semibold  rounded-lg py-3 px-6 border-[1px];
+}
+.btn-main {
+  @apply text-[#F7F7F7] bg-[#0147FF] border-transparent;
+}
+.btn-secondary {
+  @apply text-[#0147FF] bg-[#F7F7F7] border-[#0147FF];
+}
+.btn-main:hover {
+  @apply md:bg-[#F7F7F7] md:text-[#0147FF] md:border-[#0147FF];
+}
+.btn-secondary:hover {
+  @apply md:text-[#F7F7F7] md:bg-[#0147FF] md:border-transparent;
 }

@@ -68,11 +68,24 @@ function expandParagraph(num) {
 expandParagraph('1');
 expandParagraph('2');
 
+const menuDiv = document.getElementById('mobile-menu-container');
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobile-menu');
 
 hamburger.addEventListener('click', (e) => {
   e.preventDefault();
-  console.log(mobileMenu.className);
   mobileMenu.classList.toggle('hidden');
+});
+
+document.addEventListener('click', (e) => {
+  e.preventDefault();
+  if (!menuDiv.contains(e.target) && !mobileMenu.classList.contains('hidden')) {
+    mobileMenu.classList.add('hidden');
+  }
+});
+
+window.addEventListener('resize', () => {
+  if (!mobileMenu.classList.contains('hidden')) {
+    mobileMenu.classList.add('hidden');
+  }
 });
