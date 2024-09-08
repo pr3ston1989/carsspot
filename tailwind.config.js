@@ -23,6 +23,11 @@ module.exports = {
         1440: "1440px",
         1200: "1200px",
       },
+      colors: {
+        "blue-main": "#0147FF",
+        "light-main": "#F7F7F7",
+        "dark-main": "#282828",
+      },
     },
   },
   plugins: [],
