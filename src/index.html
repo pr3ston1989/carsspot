@@ -16,8 +16,8 @@
     ></script>
     <script src="./script.js" defer></script>
   </head>
-  <body class="bg-[#F7F7F7] overflow-x-hidden">
-    <header class="w-full xl:max-w-1440 px-6 xl:mx-auto relative">
+  <body class="max-w-1440 mx-auto bg-light-main overflow-x-hidden">
+    <header class="relative">
       <div
         class="max-w-1200 hidden md:flex mx-6 xl:m-auto justify-between items-center py-4"
       >
@@ -25,20 +25,12 @@
           <a href="#"><img src="./images/logo.svg" alt="logo" /> </a>
         </div>
         <nav>
-          <ul class="flex h-6 gap-6">
+          <ul class="flex gap-6">
             <li class="text-center">
-              <a
-                href="#gallery"
-                class="font-roboto-flex leading-[24px] text-center hover:text-[#0149ff] hover:underline hover:underline-offset-4"
-                >Galeria zdjęć</a
-              >
+              <a href="#gallery" class="menu-links">Galeria zdjęć</a>
             </li>
             <li class="text-center">
-              <a
-                href="#faq"
-                class="font-roboto-flex leading-[24px] text-center hover:text-[#0149ff] hover:underline hover:underline-offset-4"
-                >FaQ</a
-              >
+              <a href="#faq" class="menu-links">FaQ</a>
             </li>
           </ul>
         </nav>
@@ -50,12 +42,12 @@
         <div class="flex mx-6 justify-between items-center md:hidden">
           <a href="#"><img src="./images/logo.svg" alt="logo" /> </a>
           <button id="hamburger">
-            <img src="./images/menu.svg" alt="Menu" class="w-10 h-auto" />
+            <img src="./images/menu.svg" alt="Menu" class="w-10" />
           </button>
         </div>
         <nav
           id="mobile-menu"
-          class="hidden z-20 w-auto shadow-md bg-[#F7F7F7] absolute top-full right-0 p-4"
+          class="hidden z-20 shadow-lg bg-light-main absolute top-full right-0 p-4"
         >
           <div class="mr-4 flex flex-col items-end gap-4">
             <a href="#gallery">Galeria zdjęć</a>
@@ -66,9 +58,7 @@
       </div>
     </header>
 
-    <section
-      class="w-full xl:max-w-1440 md:h-[825px] pb-6 md:py-[120px] mx-6 xl:mx-auto relative"
-    >
+    <section class="xl:h-[825px] pb-6 xl:py-[120px] mx-4 xl:mx-0 relative">
       <img
         src="./images/wave.svg"
         alt=""
@@ -81,53 +71,47 @@
       />
 
       <div
-        class="max-w-1200 h-auto flex flex-col gap-12 mx-6 mt-12 xl:mt-0 xl:mx-auto"
+        class="max-w-1200 flex flex-col gap-12 mx-6 mt-12 xl:mt-0 xl:mx-auto"
       >
-        <div class="w-full h-auto flex flex-col gap-3 xl:gap-8">
+        <div class="flex flex-col gap-3 xl:gap-8">
           <h1
-            class="font-bebas w-full -tracking-tight-0.04 leading-[84px] font-normal text-[76px] text-[#282828]"
+            class="font-bebas -tracking-tight-0.04 leading-[84px] font-normal text-[76px] text-dark-main"
           >
             Sprzedajemy samochody <br />
             z Europy
           </h1>
-          <p class="font-roboto-condensed leading-6 text-[#282828]">
+          <p class="font-roboto-condensed leading-6 text-dark-main">
             Kup komfortowy pojazd, aby każda podróż <br />
             była wyjątkowym przeżyciem.
           </p>
         </div>
-        <div class="flex gap-6 w-full pt-6 justify-start xl:pt-0">
+        <div class="flex gap-6 pt-6 justify-start xl:pt-0">
           <a href="#gallery" class="btn-main">Zobacz zdjęcia</a>
-          <a
-            href="tel:+1234567890"
-            class="text-[#0147FF] bg-[#F7F7F7] text-15px text-center leading-5.5 -tracking-tight-0.02 font-roboto-flex font-semibold border-[1px] border-[#0147FF] rounded-lg py-3 px-6 md:hover:text-white md:hover:bg-[#0147FF] md:hover:border-transparent"
-            >Zadzwoń do nas</a
-          >
-        </div>
-        <div class="w-full h-auto relative">
-          <img
-            src="./images/hero.png"
-            alt="cars"
-            class="block w-auto h-auto xl:absolute md:w-[1064px] -z-10 xl:-bottom-[218px] xl:left-[256px] brightness-150"
-          />
-          <img
-            src="./images/rectangle.svg"
-            alt=""
-            class="absolute -z-20 -rotate-[24deg] w-[22%] top-[15%] right-[31%] xl:-top-[124px] xl:right-[265px]"
-          />
-          <img
-            src="./images/shadow.png"
-            alt="cars shadow"
-            class="w-auto h-auto xl:w-[1064px] absolute bottom-0 left-0 -z-20 xl:-bottom-[218px] xl:left-[256px] opacity-70"
-          />
+          <a href="tel:+1234567890" class="btn-secondary">Zadzwoń do nas</a>
         </div>
       </div>
     </section>
 
-    <section
-      id="gallery"
-      class="w-full xl:max-w-1440 mx-6 xl:mx-auto pt-6 md:pt-20"
-    >
-      <div class="max-w-[1264px] flex flex-col xl:mx-auto gap-6">
+    <div class="relative">
+      <img
+        src="./images/hero.png"
+        alt="cars"
+        class="block xl:absolute xl:w-[1064px] -z-10 xl:-top-[500px] xl:left-[376px] brightness-150"
+      />
+      <img
+        src="./images/shadow.png"
+        alt="cars shadow"
+        class="xl:w-[1064px] absolute bottom-0 left-0 -z-20 xl:-top-[500px] xl:left-[376px] opacity-70"
+      />
+      <img
+        src="./images/rectangle.svg"
+        alt=""
+        class="absolute -z-20 -rotate-[24deg] w-[22%] top-[15%] right-[31%] xl:w-[12%] xl:-top-[460px] xl:right-[355px]"
+      />
+    </div>
+
+    <section id="gallery" class="mx-4 xl:mx-0 pt-6 md:pt-20">
+      <div class="max-w-[1264px] section-flex">
         <div>
           <p
             class="font-roboto-condensed text-[21.5px] leading-[32.25px] text-[#0147FF]"
@@ -145,44 +129,41 @@
       </div>
     </section>
 
-    <section
-      class="w-full xl:max-w-1440 overflow-hidden mx-auto"
-      id="cars-container"
-    >
+    <section class="overflow-hidden" id="cars-container">
       <div class="swiper" id="cars">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img
               src="./images/pexels-pixabay-210019.jfif"
-              alt="red car"
+              alt="red car on forest road"
               class="slide"
             />
           </div>
           <div class="swiper-slide">
             <img
               src="./images/pexels-mikebirdy-977003.jfif"
-              alt="black car"
+              alt="black car with trees in the background"
               class="slide"
             />
           </div>
           <div class="swiper-slide">
             <img
               src="./images/pexels-sarmad-mughal-94606-305070.jfif"
-              alt="black car"
+              alt="black car close up on left headlight"
               class="slide"
             />
           </div>
           <div class="swiper-slide">
             <img
               src="./images/pexels-maria-geller-801267-2127022.jfif"
-              alt="black car"
+              alt="black car with red stripes"
               class="slide"
             />
           </div>
           <div class="swiper-slide">
             <img
               src="./images/pexels-pixabay-315938.jfif"
-              alt="black car"
+              alt="highway view from the sky"
               class="slide"
             />
           </div>
@@ -190,51 +171,48 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
-    <section
-      class="max-w-1440 overflow-hidden mx-auto hidden"
-      id="vans-container"
-    >
+    <section class="overflow-hidden hidden" id="vans-container">
       <div class="swiper" id="vans">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img
               src="./images/pexels-andreas-246992646-18586144.jpg"
-              alt="red car"
+              alt="green van with trees in the background"
               class="slide"
             />
           </div>
           <div class="swiper-slide">
             <img
               src="./images/pexels-aomata-11304087.jpg"
-              alt="black car"
+              alt="white van in canyon"
               class="slide"
             />
           </div>
           <div class="swiper-slide">
             <img
               src="./images/pexels-eddievaldes155-19871522.jpg"
-              alt="black car"
+              alt="black van in front of the house"
               class="slide"
             />
           </div>
           <div class="swiper-slide">
             <img
               src="./images/pexels-stepan-vrany-591647707-27383865.jpg"
-              alt="black car"
+              alt="white van in the forest"
               class="slide"
             />
           </div>
           <div class="swiper-slide">
             <img
               src="./images/pexels-tima-miroshnichenko-6169056.jpg"
-              alt="black car"
+              alt="man packing boxes into van"
               class="slide"
             />
           </div>
           <div class="swiper-slide">
             <img
               src="./images/pexels-stephen-leonardi-587681991-28134918.jpg"
-              alt="black car"
+              alt="white van on a mirror surface"
               class="slide"
             />
           </div>
@@ -243,11 +221,9 @@
       </div>
     </section>
 
-    <section
-      class="w-full xl:max-w-1440 mx-auto py-6 xl:py-[88px] bg-[#282828]"
-    >
+    <section class="py-6 xl:py-[88px] bg-dark-main">
       <div
-        class="max-w-1200 flex flex-col gap-6 md:gap-0 md:flex-row mx-6 xl:mx-auto items-start justify-between"
+        class="max-w-1200 section-flex md:gap-0 md:flex-row items-start justify-between"
       >
         <div class="max-w-[576px] flex flex-col flex-1 gap-4">
           <h3
@@ -257,18 +233,12 @@
             nulla commodo.
           </h3>
           <div class="flex flex-col gap-6">
-            <p
-              class="font-roboto-condensed text-sm leading-[21px] text-white"
-              id="preview-1"
-            >
+            <p class="para" id="preview-1">
               Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
               Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur
               mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...]
             </p>
-            <p
-              class="font-roboto-condensed text-sm leading-[21px] text-white hidden"
-              id="full-1"
-            >
+            <p class="para hidden" id="full-1">
               Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
               Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur
               mi, ac venenatis eros ipsum ac arcu. Vestibulum et magna at nunc
@@ -277,15 +247,8 @@
               vehicula elementum, erat risus facilisis massa, at laoreet turpis
               risus non justo.
             </p>
-            <div
-              class="max-w-[59px] flex items-center justify-between gap-1.5 border-white border-b-[1.5px] pb-1.5 hover:cursor-pointer"
-              id="para-1"
-            >
-              <a
-                href="#"
-                class="font-roboto-condensed text-sm leading-[21px] text-white tracking-tighter"
-                >Rozwiń</a
-              >
+            <div class="expand-btn" id="para-1">
+              <a href="#" class="para tracking-tighter">Rozwiń</a>
               <img src="./images/arrow.svg" alt="arrow" />
             </div>
           </div>
@@ -298,18 +261,12 @@
             nulla commodo.
           </h3>
           <div class="flex flex-col gap-6">
-            <p
-              class="font-roboto-condensed text-sm leading-[21px] text-white"
-              id="preview-2"
-            >
+            <p class="para" id="preview-2">
               Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
               Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur
               mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...]
             </p>
-            <p
-              class="font-roboto-condensed text-sm leading-[21px] text-white hidden"
-              id="full-2"
-            >
+            <p class="para hidden" id="full-2">
               Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
               Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur
               mi, ac venenatis eros ipsum ac arcu. Vestibulum et magna at nunc
@@ -318,15 +275,8 @@
               vehicula elementum, erat risus facilisis massa, at laoreet turpis
               risus non justo.
             </p>
-            <div
-              class="max-w-[59px] flex items-center justify-between gap-1.5 border-white border-b-[1.5px] pb-1.5 hover:cursor-pointer"
-              id="para-2"
-            >
-              <a
-                href="#"
-                class="font-roboto-condensed text-sm leading-[21px] text-white tracking-tighter"
-                >Rozwiń</a
-              >
+            <div class="expand-btn" id="para-2">
+              <a href="#" class="para tracking-tighter">Rozwiń</a>
               <img src="./images/arrow.svg" alt="arrow" />
             </div>
           </div>
@@ -334,7 +284,7 @@
       </div>
     </section>
     <footer
-      class="w-full xl:max-w-1440 bg-[#282828] border-t-[1px] border-white flex justify-between mx-auto py-4 md:py-6 px-6 xl:px-[120px]"
+      class="bg-dark-main border-t-1 border-white flex justify-between py-4 px-4 xl:px-[120px]"
     >
       <a
         href="#"

@@ -12,7 +12,9 @@ module.exports = {
         "15px": "15px",
       },
       lineHeight: {
+        5.2: "21px",
         5.5: "22.5px",
+        5.7: "24px",
       },
       letterSpacing: {
         "tight-0.02": "0.02em",
@@ -27,6 +29,9 @@ module.exports = {
         "blue-main": "#0147FF",
         "light-main": "#F7F7F7",
         "dark-main": "#282828",
+      },
+      borderWidth: {
+        1: "1px",
       },
     },
   },
