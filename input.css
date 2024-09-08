@@ -41,17 +41,21 @@
 }
 
 .slide {
-  @apply h-auto w-full xl:h-full object-cover !important;
+  @apply h-auto w-full xl:h-full object-cover mb-6 xl:mb-0 !important;
 }
 
 .swiper-pagination {
-  @apply xl:mb-[81px] flex gap-[3px] justify-center opacity-60 !important;
+  @apply mb-6 xl:mb-[81px] flex gap-[3px] justify-center opacity-60 !important;
 }
 
 .link-active {
-  @apply font-roboto-flex font-semibold leading-22.5 tracking-tight-custom-02 text-15px text-[#0147FF] underline underline-offset-4 hover:cursor-pointer;
+  @apply font-roboto-flex font-semibold leading-22.5 -tracking-tight-0.02 text-15px text-[#0147FF] underline underline-offset-4 hover:cursor-pointer;
 }
 
 .link-not-active {
-  @apply font-roboto-flex font-normal leading-22.5 tracking-tight-custom-02 text-15px text-black hover:cursor-pointer hover:underline hover:underline-offset-4;
+  @apply font-roboto-flex font-normal leading-22.5 -tracking-tight-0.02 text-15px text-black hover:cursor-pointer hover:underline hover:underline-offset-4;
+}
+
+#hamburger {
+  @apply block cursor-pointer;
 }
