@@ -16,10 +16,10 @@
     ></script>
     <script src="./script.js" defer></script>
   </head>
-  <body class="bg-[#F7F7F7]">
-    <header class="max-w-1440 mx-6 xl:mx-auto relative">
+  <body class="bg-[#F7F7F7] overflow-x-hidden">
+    <header class="w-full xl:max-w-1440 px-6 xl:mx-auto relative">
       <div
-        class="max-w-1200 hidden md:flex mx-6 md:m-auto justify-between items-center py-4"
+        class="max-w-1200 hidden md:flex mx-6 xl:m-auto justify-between items-center py-4"
       >
         <div class="w-1/4 h-2/3">
           <a href="#"><img src="./images/logo.svg" alt="logo" /> </a>
@@ -43,33 +43,31 @@
           </ul>
         </nav>
         <div class="w-1/4 flex justify-end">
-          <a
-            href="tel:+1234567890"
-            class="text-[#F7F7F7] text-15px text-center leading-[22.5px] h-full -tracking-tight-0.02 font-roboto-flex font-semibold bg-[#0149ff] border-[1px] border-transparent md:hover:bg-[#F7F7F7] md:hover:text-[#0149ff] md:hover:border-[#0147FF] rounded-lg py-3 px-6"
-            >Zadzwoń do nas</a
-          >
+          <a href="tel:+1234567890" class="btn-main">Zadzwoń do nas</a>
         </div>
       </div>
-      <div class="flex mx-6 justify-between items-center md:hidden">
-        <a href="#"><img src="./images/logo.svg" alt="logo" /> </a>
-        <button id="hamburger">
-          <img src="./images/menu.svg" alt="Menu" class="w-10 h-auto" />
-        </button>
-      </div>
-      <nav
-        id="mobile-menu"
-        class="hidden z-20 w-auto shadow-md bg-[#F7F7F7] absolute top-full right-0 p-4"
-      >
-        <div class="mr-4 flex flex-col items-end gap-4">
-          <a href="#gallery">Galeria zdjęć</a>
-          <a href="#faq">FAQ</a>
-          <a href="tel:+1234567890">Zadzwoń do nas</a>
+      <div id="mobile-menu-container">
+        <div class="flex mx-6 justify-between items-center md:hidden">
+          <a href="#"><img src="./images/logo.svg" alt="logo" /> </a>
+          <button id="hamburger">
+            <img src="./images/menu.svg" alt="Menu" class="w-10 h-auto" />
+          </button>
         </div>
-      </nav>
+        <nav
+          id="mobile-menu"
+          class="hidden z-20 w-auto shadow-md bg-[#F7F7F7] absolute top-full right-0 p-4"
+        >
+          <div class="mr-4 flex flex-col items-end gap-4">
+            <a href="#gallery">Galeria zdjęć</a>
+            <a href="#faq">FAQ</a>
+            <a href="tel:+1234567890">Zadzwoń do nas</a>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <section
-      class="max-w-1440 md:h-[825px] pb-6 md:py-[120px] mx-6 xl:mx-auto relative overflow-visible"
+      class="w-full xl:max-w-1440 md:h-[825px] pb-6 md:py-[120px] mx-6 xl:mx-auto relative"
     >
       <img
         src="./images/wave.svg"
@@ -79,7 +77,7 @@
       <img
         src="./images/wave.svg"
         alt=""
-        class="xl:hidden -z-20 absolute w-full h-3/4 top-0 rotate-90 scale-y-150"
+        class="xl:hidden -z-20 absolute w-full h-3/4 -top-1/4 -left-1/2 rotate-45 scale-y-150"
       />
 
       <div
@@ -98,14 +96,10 @@
           </p>
         </div>
         <div class="flex gap-6 w-full pt-6 justify-start xl:pt-0">
-          <a
-            href="#gallery"
-            class="text-[#F7F7F7] text-15px text-center leading-22.5 -tracking-tight-0.02 font-roboto-flex font-semibold bg-[#0147FF] rounded-lg py-3 px-6 border-[1px] border-transparent hover:bg-[#F7F7F7] hover:text-[#0149ff] hover:border-[#0147FF]"
-            >Zobacz zdjęcia</a
-          >
+          <a href="#gallery" class="btn-main">Zobacz zdjęcia</a>
           <a
             href="tel:+1234567890"
-            class="text-[#0147FF] bg-[#F7F7F7] text-15px text-center leading-22.5 -tracking-tight-0.02 font-roboto-flex font-semibold border-[1px] border-[#0147FF] rounded-lg py-3 px-6 md:hover:text-white md:hover:bg-[#0147FF] md:hover:border-transparent"
+            class="text-[#0147FF] bg-[#F7F7F7] text-15px text-center leading-5.5 -tracking-tight-0.02 font-roboto-flex font-semibold border-[1px] border-[#0147FF] rounded-lg py-3 px-6 md:hover:text-white md:hover:bg-[#0147FF] md:hover:border-transparent"
             >Zadzwoń do nas</a
           >
         </div>
@@ -129,7 +123,10 @@
       </div>
     </section>
 
-    <section id="gallery" class="max-w-1440 mx-6 xl:mx-auto pt-6 md:pt-20">
+    <section
+      id="gallery"
+      class="w-full xl:max-w-1440 mx-6 xl:mx-auto pt-6 md:pt-20"
+    >
       <div class="max-w-[1264px] flex flex-col xl:mx-auto gap-6">
         <div>
           <p
@@ -149,7 +146,7 @@
     </section>
 
     <section
-      class="max-w-1440 overflow-hidden mx-6 xl:mx-auto"
+      class="w-full xl:max-w-1440 overflow-hidden mx-auto"
       id="cars-container"
     >
       <div class="swiper" id="cars">
@@ -246,7 +243,9 @@
       </div>
     </section>
 
-    <section class="max-w-1440 mx-auto py-6 xl:py-[88px] bg-[#282828]">
+    <section
+      class="w-full xl:max-w-1440 mx-auto py-6 xl:py-[88px] bg-[#282828]"
+    >
       <div
         class="max-w-1200 flex flex-col gap-6 md:gap-0 md:flex-row mx-6 xl:mx-auto items-center justify-between"
       >
@@ -279,7 +278,7 @@
               risus non justo.
             </p>
             <div
-              class="w-[59px] flex items-center justify-between gap-1.5 border-white border-b-[1.5px] pb-1.5 hover:cursor-pointer"
+              class="max-w-[59px] flex items-center justify-between gap-1.5 border-white border-b-[1.5px] pb-1.5 hover:cursor-pointer"
               id="para-1"
             >
               <a
@@ -320,7 +319,7 @@
               risus non justo.
             </p>
             <div
-              class="w-[59px] flex items-center justify-between gap-1.5 border-white border-b-[1.5px] pb-1.5 hover:cursor-pointer"
+              class="max-w-[59px] flex items-center justify-between gap-1.5 border-white border-b-[1.5px] pb-1.5 hover:cursor-pointer"
               id="para-2"
             >
               <a
@@ -335,7 +334,7 @@
       </div>
     </section>
     <footer
-      class="max-w-1440 bg-[#282828] border-t-[1px] border-white flex justify-between mx-auto py-4 md:py-6 px-6 xl:px-[120px]"
+      class="w-full xl:max-w-1440 bg-[#282828] border-t-[1px] border-white flex justify-between mx-auto py-4 md:py-6 px-6 xl:px-[120px]"
     >
       <a
         href="#"

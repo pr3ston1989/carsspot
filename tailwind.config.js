@@ -12,7 +12,7 @@ module.exports = {
         "15px": "15px",
       },
       lineHeight: {
-        22.5: "22.5px",
+        5.5: "22.5px",
       },
       letterSpacing: {
         "tight-0.02": "0.02em",
