@@ -15,9 +15,9 @@ module.exports = {
         22.5: "22.5px",
       },
       letterSpacing: {
-        "tight-custom-02": "-0.02em",
-        "tight-custom-03": "-0.03em",
-        "tight-custon-04": "-0.04em",
+        "tight-0.02": "0.02em",
+        "tight-0.03": "0.03em",
+        "tight-0.04": "0.04em",
       },
       maxWidth: {
         1440: "1440px",

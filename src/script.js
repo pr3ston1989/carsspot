@@ -67,3 +67,12 @@ function expandParagraph(num) {
 
 expandParagraph('1');
 expandParagraph('2');
+
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+
+hamburger.addEventListener('click', (e) => {
+  e.preventDefault();
+  console.log(mobileMenu.className);
+  mobileMenu.classList.toggle('hidden');
+});

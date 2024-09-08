@@ -17,29 +17,9 @@
     <script src="./script.js" defer></script>
   </head>
   <body class="bg-[#F7F7F7]">
-    <header class="max-w-1440 mx-auto relative">
-      <img
-        src="./images/wave.svg"
-        alt=""
-        class="-z-10 absolute hidden xl:block md:h-[659px] w-auto md:left-[698px]"
-      />
-      <img
-        src="./images/hero.png"
-        alt="cars"
-        class="sm:w-1/2 md:w-[1064px] h-auto absolute sm:left-1/2 top-[408px] md:left-[376px] brightness-150"
-      />
-      <img
-        src="./images/rectangle.svg"
-        alt=""
-        class="absolute -z-10 top-[462px] hidden md:block md:left-[908px]"
-      />
-      <img
-        src="./images/shadow.png"
-        alt="cars shadow"
-        class="sm:w-1/2 md:w-[1064px] h-auto absolute sm:left-1/2 top-[408px] md:left-[376px] opacity-70"
-      />
+    <header class="max-w-1440 mx-6 xl:mx-auto relative">
       <div
-        class="flex mx-6 md:m-auto justify-between items-center py-4 max-w-1200"
+        class="max-w-1200 hidden md:flex mx-6 md:m-auto justify-between items-center py-4"
       >
         <div class="w-1/4 h-2/3">
           <a href="#"><img src="./images/logo.svg" alt="logo" /> </a>
@@ -55,7 +35,7 @@
             </li>
             <li class="text-center">
               <a
-                href="#"
+                href="#faq"
                 class="font-roboto-flex leading-[24px] text-center hover:text-[#0149ff] hover:underline hover:underline-offset-4"
                 >FaQ</a
               >
@@ -65,20 +45,49 @@
         <div class="w-1/4 flex justify-end">
           <a
             href="tel:+1234567890"
-            class="text-[#F7F7F7] text-15px text-center leading-[22.5px] h-full tracking-tight-custom-02 font-roboto-flex font-semibold bg-[#0149ff] md:hover:bg-[#F7F7F7] md:hover:text-[#0149ff] md:hover:border-[1px] md:hover:border-[#0147FF] rounded-lg py-3 px-6"
+            class="text-[#F7F7F7] text-15px text-center leading-[22.5px] h-full -tracking-tight-0.02 font-roboto-flex font-semibold bg-[#0149ff] border-[1px] border-transparent md:hover:bg-[#F7F7F7] md:hover:text-[#0149ff] md:hover:border-[#0147FF] rounded-lg py-3 px-6"
             >Zadzwoń do nas</a
           >
         </div>
       </div>
+      <div class="flex mx-6 justify-between items-center md:hidden">
+        <a href="#"><img src="./images/logo.svg" alt="logo" /> </a>
+        <button id="hamburger">
+          <img src="./images/menu.svg" alt="Menu" class="w-10 h-auto" />
+        </button>
+      </div>
+      <nav
+        id="mobile-menu"
+        class="hidden z-20 w-auto shadow-md bg-[#F7F7F7] absolute top-full right-0 p-4"
+      >
+        <div class="mr-4 flex flex-col items-end gap-4">
+          <a href="#gallery">Galeria zdjęć</a>
+          <a href="#faq">FAQ</a>
+          <a href="tel:+1234567890">Zadzwoń do nas</a>
+        </div>
+      </nav>
     </header>
 
     <section
-      class="max-w-1440 md:h-[825px] pb-6 md:py-[120px] mx-auto relative"
+      class="max-w-1440 md:h-[825px] pb-6 md:py-[120px] mx-6 xl:mx-auto relative overflow-visible"
     >
-      <div class="max-w-1200 h-auto flex flex-col gap-12 mx-6 md:mx-auto">
-        <div class="w-full h-auto flex flex-col gap-3 md:gap-8">
+      <img
+        src="./images/wave.svg"
+        alt=""
+        class="hidden xl:block -z-20 absolute xl:w-[669px] xl:h-[659px] xl:-top-20 xl:left-[698px]"
+      />
+      <img
+        src="./images/wave.svg"
+        alt=""
+        class="xl:hidden -z-20 absolute w-full h-3/4 top-0 rotate-90 scale-y-150"
+      />
+
+      <div
+        class="max-w-1200 h-auto flex flex-col gap-12 mx-6 mt-12 xl:mt-0 xl:mx-auto"
+      >
+        <div class="w-full h-auto flex flex-col gap-3 xl:gap-8">
           <h1
-            class="font-bebas w-full tracking-tight-custon-04 leading-[84px] font-normal text-[76px] text-[#282828]"
+            class="font-bebas w-full -tracking-tight-0.04 leading-[84px] font-normal text-[76px] text-[#282828]"
           >
             Sprzedajemy samochody <br />
             z Europy
@@ -88,27 +97,40 @@
             była wyjątkowym przeżyciem.
           </p>
         </div>
-        <div
-          class="flex gap-6 w-full pt-[15vh] justify-between md:justify-start md:pt-0"
-        >
+        <div class="flex gap-6 w-full pt-6 justify-start xl:pt-0">
           <a
             href="#gallery"
-            class="text-[#F7F7F7] text-15px text-center leading-22.5 tracking-tight-custom-02 font-roboto-flex font-semibold bg-[#0147FF] rounded-lg py-3 px-6 hover:bg-[#F7F7F7] hover:text-[#0149ff] hover:border-[1px] hover:border-[#0147FF]"
+            class="text-[#F7F7F7] text-15px text-center leading-22.5 -tracking-tight-0.02 font-roboto-flex font-semibold bg-[#0147FF] rounded-lg py-3 px-6 border-[1px] border-transparent hover:bg-[#F7F7F7] hover:text-[#0149ff] hover:border-[#0147FF]"
             >Zobacz zdjęcia</a
           >
           <a
             href="tel:+1234567890"
-            class="text-[#0147FF] bg-[#F7F7F7] text-15px text-center leading-22.5 tracking-tight-custom-02 font-roboto-flex font-semibold border-[1px] border-[#0147FF] rounded-lg py-3 px-6 md:hover:text-white md:hover:bg-[#0147FF] md:hover:border-0"
+            class="text-[#0147FF] bg-[#F7F7F7] text-15px text-center leading-22.5 -tracking-tight-0.02 font-roboto-flex font-semibold border-[1px] border-[#0147FF] rounded-lg py-3 px-6 md:hover:text-white md:hover:bg-[#0147FF] md:hover:border-transparent"
             >Zadzwoń do nas</a
           >
+        </div>
+        <div class="w-full h-auto relative">
+          <img
+            src="./images/hero.png"
+            alt="cars"
+            class="block w-auto h-auto xl:absolute md:w-[1064px] -z-10 xl:-bottom-[218px] xl:left-[256px] brightness-150"
+          />
+          <img
+            src="./images/rectangle.svg"
+            alt=""
+            class="absolute -z-20 -rotate-[24deg] w-[22%] top-[15%] right-[31%] xl:-top-[124px] xl:right-[265px]"
+          />
+          <img
+            src="./images/shadow.png"
+            alt="cars shadow"
+            class="w-auto h-auto xl:w-[1064px] absolute bottom-0 left-0 -z-20 xl:-bottom-[218px] xl:left-[256px] opacity-70"
+          />
         </div>
       </div>
     </section>
 
-    <section id="gallery" class="max-w-1440 mx-auto pt-6 md:pt-20">
-      <div
-        class="max-w-[1264px] mx-auto flex flex-col items-center md:items-start gap-6"
-      >
+    <section id="gallery" class="max-w-1440 mx-6 xl:mx-auto pt-6 md:pt-20">
+      <div class="max-w-[1264px] flex flex-col xl:mx-auto gap-6">
         <div>
           <p
             class="font-roboto-condensed text-[21.5px] leading-[32.25px] text-[#0147FF]"
@@ -126,7 +148,10 @@
       </div>
     </section>
 
-    <section class="max-w-1440 overflow-hidden mx-auto" id="cars-container">
+    <section
+      class="max-w-1440 overflow-hidden mx-6 xl:mx-auto"
+      id="cars-container"
+    >
       <div class="swiper" id="cars">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -223,11 +248,11 @@
 
     <section class="max-w-1440 mx-auto py-6 xl:py-[88px] bg-[#282828]">
       <div
-        class="max-w-1200 flex flex-col gap-6 md:gap-0 md:flex-row mx-6 md:mx-auto items-center justify-between"
+        class="max-w-1200 flex flex-col gap-6 md:gap-0 md:flex-row mx-6 xl:mx-auto items-center justify-between"
       >
-        <div class="max-w-[576px] flex flex-col gap-4">
+        <div class="max-w-[576px] flex flex-col flex-1 gap-4">
           <h3
-            class="font-bebas text-[25px] text-white leading-[37.5px] tracking-tight-custom-03"
+            class="font-bebas text-[25px] text-white leading-[37.5px] -tracking-tight-0.03"
           >
             Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit
             nulla commodo.
@@ -266,9 +291,9 @@
             </div>
           </div>
         </div>
-        <div class="max-w-[576px] flex flex-col gap-4">
+        <div class="max-w-[576px] flex flex-col flex-1 gap-4">
           <h3
-            class="font-bebas text-[25px] text-white leading-[37.5px] tracking-tight-custom-03"
+            class="font-bebas text-[25px] text-white leading-[37.5px] -tracking-tight-0.03"
           >
             Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit
             nulla commodo.
@@ -310,7 +335,7 @@
       </div>
     </section>
     <footer
-      class="max-w-1440 bg-[#282828] border-t-[1px] border-white flex justify-between mx-auto py-4 md:py-6 px-6 md:px-[120px]"
+      class="max-w-1440 bg-[#282828] border-t-[1px] border-white flex justify-between mx-auto py-4 md:py-6 px-6 xl:px-[120px]"
     >
       <a
         href="#"
