@@ -78,7 +78,6 @@ hamburger.addEventListener('click', (e) => {
 });
 
 document.addEventListener('click', (e) => {
-  e.preventDefault();
   if (!menuDiv.contains(e.target) && !mobileMenu.classList.contains('hidden')) {
     mobileMenu.classList.add('hidden');
   }
