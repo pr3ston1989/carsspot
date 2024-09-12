@@ -62,7 +62,7 @@
 
 .btn-main,
 .btn-secondary {
-  @apply text-15px text-center leading-5.5 -tracking-tight-0.02 font-roboto-flex font-semibold rounded-lg py-3 px-6 border-1;
+  @apply text-15px text-center leading-5.5 -tracking-tight-0.02 font-roboto-flex font-semibold w-full md:w-auto rounded-lg py-3 px-6 border-1;
 }
 .btn-main {
   @apply text-light-main bg-blue-main border-transparent;

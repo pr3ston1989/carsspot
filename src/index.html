@@ -18,6 +18,7 @@
   </head>
   <body class="max-w-1440 mx-auto bg-light-main overflow-x-hidden">
     <header class="relative">
+      <!--Desktop menu-->
       <div
         class="max-w-1200 hidden md:flex mx-6 xl:m-auto justify-between items-center py-4"
       >
@@ -38,8 +39,9 @@
           <a href="tel:+1234567890" class="btn-main">Zadzwoń do nas</a>
         </div>
       </div>
+      <!--Hamburger menu-->
       <div id="mobile-menu-container">
-        <div class="flex mx-6 justify-between items-center md:hidden">
+        <div class="flex mx-6 mt-6 justify-between items-center md:hidden">
           <a href="#"><img src="./images/logo.svg" alt="logo" /> </a>
           <button id="hamburger">
             <img src="./images/menu.svg" alt="Menu" class="w-10" />
@@ -57,7 +59,7 @@
         </nav>
       </div>
     </header>
-
+    <!--Hero section-->
     <section class="xl:h-[825px] pb-6 xl:py-[120px] mx-4 xl:mx-0 relative">
       <img
         src="./images/wave.svg"
@@ -67,7 +69,7 @@
       <img
         src="./images/wave.svg"
         alt=""
-        class="xl:hidden -z-20 absolute w-full h-3/4 -top-1/4 -left-1/2 rotate-45 scale-y-150"
+        class="xl:hidden -z-20 absolute w-full -top-60 -left-1/2 rotate-45 scale-y-150"
       />
 
       <div
@@ -85,13 +87,14 @@
             była wyjątkowym przeżyciem.
           </p>
         </div>
-        <div class="flex gap-6 pt-6 justify-start xl:pt-0">
+        <div class="flex flex-col gap-6 pt-6 justify-start md:flex-row xl:pt-0">
           <a href="#gallery" class="btn-main">Zobacz zdjęcia</a>
           <a href="tel:+1234567890" class="btn-secondary">Zadzwoń do nas</a>
         </div>
       </div>
     </section>
 
+    <!--Background images-->
     <div class="relative">
       <img
         src="./images/hero.png"
@@ -109,12 +112,12 @@
         class="absolute -z-20 -rotate-[24deg] w-[22%] top-[15%] right-[31%] xl:w-[12%] xl:-top-[460px] xl:right-[355px]"
       />
     </div>
-
+    <!--Presentation section-->
     <section id="gallery" class="mx-4 xl:mx-0 pt-6 md:pt-20">
       <div class="max-w-[1264px] section-flex">
         <div>
           <p
-            class="font-roboto-condensed text-[21.5px] leading-[32.25px] text-[#0147FF]"
+            class="font-roboto-condensed text-[21.5px] leading-[32.25px] text-blue-main"
           >
             Prezentacja firmy
           </p>
@@ -128,7 +131,7 @@
         </div>
       </div>
     </section>
-
+    <!--Swiper gallery section - cars-->
     <section class="overflow-hidden" id="cars-container">
       <div class="swiper" id="cars">
         <div class="swiper-wrapper">
@@ -171,6 +174,7 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
+    <!--Swiper gallery section - vans-->
     <section class="overflow-hidden hidden" id="vans-container">
       <div class="swiper" id="vans">
         <div class="swiper-wrapper">
@@ -220,7 +224,7 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
-
+    <!--Bottom section-->
     <section class="py-6 xl:py-[88px] bg-dark-main">
       <div
         class="max-w-1200 section-flex md:gap-0 md:flex-row items-start justify-between"
@@ -283,6 +287,7 @@
         </div>
       </div>
     </section>
+    <!--Footer-->
     <footer
       class="bg-dark-main border-t-1 border-white flex justify-between py-4 px-4 xl:px-[120px]"
     >
