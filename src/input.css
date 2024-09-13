@@ -49,11 +49,11 @@
 }
 
 .link-active {
-  @apply font-roboto-flex font-semibold leading-5.5 -tracking-tight-0.02 text-15px text-blue-main underline underline-offset-4 hover:cursor-pointer;
+  @apply font-roboto-flex font-semibold leading-5.5 -tracking-tight-0.02 text-[13px] md:text-15px text-blue-main underline underline-offset-4 hover:cursor-pointer;
 }
 
 .link-not-active {
-  @apply font-roboto-flex font-normal leading-5.5 -tracking-tight-0.02 text-15px text-black hover:cursor-pointer hover:underline hover:underline-offset-4;
+  @apply font-roboto-flex font-normal leading-5.5 -tracking-tight-0.02 text-[13px] md:text-15px text-black hover:cursor-pointer hover:underline hover:underline-offset-4;
 }
 
 #hamburger {
@@ -71,14 +71,23 @@
   @apply text-blue-main bg-light-main border-blue-main;
 }
 .btn-main:hover {
-  @apply md:bg-light-main md:text-blue-main md:border-blue-main;
+  @apply md:bg-light-main md:text-blue-main md:border-blue-main md:transition-colors md:duration-200 md:ease-in-out;
 }
 .btn-secondary:hover {
-  @apply md:text-light-main md:bg-blue-main md:border-transparent;
+  @apply md:text-light-main md:bg-blue-main md:border-transparent md:transition-colors md:duration-200 md:ease-in-out;
 }
 
 .para {
-  @apply font-roboto-condensed text-sm leading-5.2 text-white;
+  @apply font-roboto-condensed text-sm leading-5.2
+    text-white;
+  max-height: 4rem;
+  overflow: hidden;
+  transition: max-height 500ms ease;
+}
+
+.para.full {
+  max-height: 10rem;
+  overflow: hidden;
 }
 
 .section-flex {
@@ -86,7 +95,14 @@
 }
 
 .menu-links {
-  @apply font-roboto-flex leading-5.7 text-center hover:text-blue-main hover:underline hover:underline-offset-4;
+  @apply font-roboto-flex leading-5.7 text-center;
+}
+
+.menu-links,
+.bottom-links,
+#cars-gallery,
+#vans-gallery {
+  @apply md:hover:text-blue-main md:hover:underline md:hover:underline-offset-4 md:hover:transition-colors;
 }
 
 .expand-btn {

@@ -16,11 +16,11 @@
     ></script>
     <script src="./script.js" defer></script>
   </head>
-  <body class="max-w-1440 mx-auto bg-light-main overflow-x-hidden">
+  <body class="mx-auto bg-light-main overflow-x-hidden">
     <header class="relative">
       <!--Desktop menu-->
       <div
-        class="max-w-1200 hidden md:flex mx-6 xl:m-auto justify-between items-center py-4"
+        class="max-w-1200 hidden md:flex mx-4 xl:m-auto justify-between items-center py-4"
       >
         <div class="w-1/4 h-2/3">
           <a href="#"><img src="./images/logo.svg" alt="logo" /> </a>
@@ -41,7 +41,7 @@
       </div>
       <!--Hamburger menu-->
       <div id="mobile-menu-container">
-        <div class="flex mx-6 mt-6 justify-between items-center md:hidden">
+        <div class="flex mx-4 mt-6 justify-between items-center md:hidden">
           <a href="#"><img src="./images/logo.svg" alt="logo" /> </a>
           <button id="hamburger">
             <img src="./images/menu.svg" alt="Menu" class="w-10" />
@@ -61,10 +61,11 @@
     </header>
     <!--Hero section-->
     <section class="xl:h-[825px] pb-6 xl:py-[120px] mx-4 xl:mx-0 relative">
+      <!--Background wave SVG-->
       <img
         src="./images/wave.svg"
         alt=""
-        class="hidden xl:block -z-20 absolute xl:w-[669px] xl:h-[659px] xl:-top-20 xl:left-[698px]"
+        class="hidden xl:block -z-20 absolute xl:w-[669px] xl:h-[659px] xl:-top-20 xl:right-[300px]"
       />
       <img
         src="./images/wave.svg"
@@ -77,7 +78,7 @@
       >
         <div class="flex flex-col gap-3 xl:gap-8">
           <h1
-            class="font-bebas -tracking-tight-0.04 leading-[84px] font-normal text-[76px] text-dark-main"
+            class="font-bebas -tracking-tight-0.04 leading-[84px] font-normal text-5xl md:text-[76px] text-dark-main"
           >
             Sprzedajemy samochody <br />
             z Europy
@@ -95,7 +96,7 @@
     </section>
 
     <!--Background images-->
-    <div class="relative">
+    <div class="max-w-1440 mx-auto relative">
       <img
         src="./images/hero.png"
         alt="cars"
@@ -131,101 +132,104 @@
         </div>
       </div>
     </section>
-    <!--Swiper gallery section - cars-->
-    <section class="overflow-hidden" id="cars-container">
-      <div class="swiper" id="cars">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img
-              src="./images/pexels-pixabay-210019.jfif"
-              alt="red car on forest road"
-              class="slide"
-            />
+    <!--Image gallery-->
+    <section class="max-w-1440 mx-auto">
+      <!--Swiper gallery section - cars-->
+      <div class="overflow-hidden" id="cars-container">
+        <div class="swiper" id="cars">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="./images/pexels-pixabay-210019.jfif"
+                alt="red car on forest road"
+                class="slide"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/pexels-mikebirdy-977003.jfif"
+                alt="black car with trees in the background"
+                class="slide"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/pexels-sarmad-mughal-94606-305070.jfif"
+                alt="black car close up on left headlight"
+                class="slide"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/pexels-maria-geller-801267-2127022.jfif"
+                alt="black car with red stripes"
+                class="slide"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/pexels-pixabay-315938.jfif"
+                alt="highway view from the sky"
+                class="slide"
+              />
+            </div>
           </div>
-          <div class="swiper-slide">
-            <img
-              src="./images/pexels-mikebirdy-977003.jfif"
-              alt="black car with trees in the background"
-              class="slide"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="./images/pexels-sarmad-mughal-94606-305070.jfif"
-              alt="black car close up on left headlight"
-              class="slide"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="./images/pexels-maria-geller-801267-2127022.jfif"
-              alt="black car with red stripes"
-              class="slide"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="./images/pexels-pixabay-315938.jfif"
-              alt="highway view from the sky"
-              class="slide"
-            />
-          </div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-pagination"></div>
       </div>
-    </section>
-    <!--Swiper gallery section - vans-->
-    <section class="overflow-hidden hidden" id="vans-container">
-      <div class="swiper" id="vans">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img
-              src="./images/pexels-andreas-246992646-18586144.jpg"
-              alt="green van with trees in the background"
-              class="slide"
-            />
+      <!--Swiper gallery section - vans-->
+      <div class="overflow-hidden hidden" id="vans-container">
+        <div class="swiper" id="vans">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="./images/pexels-andreas-246992646-18586144.jpg"
+                alt="green van with trees in the background"
+                class="slide"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/pexels-aomata-11304087.jpg"
+                alt="white van in canyon"
+                class="slide"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/pexels-eddievaldes155-19871522.jpg"
+                alt="black van in front of the house"
+                class="slide"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/pexels-stepan-vrany-591647707-27383865.jpg"
+                alt="white van in the forest"
+                class="slide"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/pexels-tima-miroshnichenko-6169056.jpg"
+                alt="man packing boxes into van"
+                class="slide"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/pexels-stephen-leonardi-587681991-28134918.jpg"
+                alt="white van on a mirror surface"
+                class="slide"
+              />
+            </div>
           </div>
-          <div class="swiper-slide">
-            <img
-              src="./images/pexels-aomata-11304087.jpg"
-              alt="white van in canyon"
-              class="slide"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="./images/pexels-eddievaldes155-19871522.jpg"
-              alt="black van in front of the house"
-              class="slide"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="./images/pexels-stepan-vrany-591647707-27383865.jpg"
-              alt="white van in the forest"
-              class="slide"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="./images/pexels-tima-miroshnichenko-6169056.jpg"
-              alt="man packing boxes into van"
-              class="slide"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="./images/pexels-stephen-leonardi-587681991-28134918.jpg"
-              alt="white van on a mirror surface"
-              class="slide"
-            />
-          </div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-pagination"></div>
       </div>
     </section>
     <!--Bottom section-->
-    <section class="py-6 xl:py-[88px] bg-dark-main">
+    <section class="py-4 xl:py-[88px] bg-dark-main">
       <div
         class="max-w-1200 section-flex md:gap-0 md:flex-row items-start justify-between"
       >
@@ -237,12 +241,7 @@
             nulla commodo.
           </h3>
           <div class="flex flex-col gap-6">
-            <p class="para" id="preview-1">
-              Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
-              Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur
-              mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...]
-            </p>
-            <p class="para hidden" id="full-1">
+            <p class="para short" id="full-1">
               Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
               Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur
               mi, ac venenatis eros ipsum ac arcu. Vestibulum et magna at nunc
@@ -251,9 +250,27 @@
               vehicula elementum, erat risus facilisis massa, at laoreet turpis
               risus non justo.
             </p>
-            <div class="expand-btn" id="para-1">
-              <a href="#" class="para tracking-tighter">Rozwiń</a>
-              <img src="./images/arrow.svg" alt="arrow" />
+            <div
+              class="expand-btn group md:hover:border-blue-main md:hover:transition-all duration-300"
+              id="para-1"
+            >
+              <a
+                href="#"
+                class="para tracking-tighter md:group-hover:text-blue-main md:group-hover:transition-all duration-300"
+                >Rozwiń</a
+              >
+              <svg
+                class="fill-white md:group-hover:fill-blue-main md:group-hover:transition-all duration-300"
+                width="13"
+                height="15"
+                viewBox="0 0 13 15"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 8.44461L1.07955 7.35086L5.58239 11.8537L5.58239 0.191772L7.14489 0.191773L7.14489 11.8537L11.6335 7.35086L12.7273 8.44461L6.36364 14.8083L0 8.44461Z"
+                />
+              </svg>
             </div>
           </div>
         </div>
@@ -265,12 +282,7 @@
             nulla commodo.
           </h3>
           <div class="flex flex-col gap-6">
-            <p class="para" id="preview-2">
-              Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
-              Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur
-              mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...]
-            </p>
-            <p class="para hidden" id="full-2">
+            <p class="para short" id="full-2">
               Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
               Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur
               mi, ac venenatis eros ipsum ac arcu. Vestibulum et magna at nunc
@@ -279,28 +291,48 @@
               vehicula elementum, erat risus facilisis massa, at laoreet turpis
               risus non justo.
             </p>
-            <div class="expand-btn" id="para-2">
-              <a href="#" class="para tracking-tighter">Rozwiń</a>
-              <img src="./images/arrow.svg" alt="arrow" />
+            <div
+              class="expand-btn group md:hover:border-blue-main md:hover:transition-all duration-300"
+              id="para-2"
+            >
+              <a
+                href="#"
+                class="para tracking-tighter md:group-hover:text-blue-main md:group-hover:transition-all duration-300"
+                >Rozwiń</a
+              >
+              <svg
+                class="fill-white md:group-hover:fill-blue-main md:group-hover:transition-all duration-300"
+                width="13"
+                height="15"
+                viewBox="0 0 13 15"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 8.44461L1.07955 7.35086L5.58239 11.8537L5.58239 0.191772L7.14489 0.191773L7.14489 11.8537L11.6335 7.35086L12.7273 8.44461L6.36364 14.8083L0 8.44461Z"
+                />
+              </svg>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!--Footer-->
-    <footer
-      class="bg-dark-main border-t-1 border-white flex justify-between py-4 px-4 xl:px-[120px]"
-    >
-      <a
-        href="#"
-        class="font-roboto-condensed font-bold text-white text-center leading-6"
-        >Cars Spot</a
+    <footer class="bg-dark-main border-t-1 border-white">
+      <div
+        class="max-w-1440 flex justify-between items-center mx-auto py-4 px-4 h-[4.5rem] xl:px-[120px]"
       >
-      <a
-        href="#"
-        class="font-roboto-condensed text-white text-center leading-6 underline text-underline-offset-1"
-        >Polityka prywatności</a
-      >
+        <a
+          href="#"
+          class="bottom-links font-roboto-condensed font-bold text-white text-center leading-6"
+          >Cars Spot</a
+        >
+        <a
+          href="#"
+          class="bottom-links font-roboto-condensed text-white text-center leading-6 border-b-1 h-[20px] hover:border-0 hover:transition-[border]-none"
+          >Polityka prywatności</a
+        >
+      </div>
     </footer>
   </body>
 </html>
