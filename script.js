@@ -45,28 +45,30 @@ carsLink.addEventListener('click', (e) => {
   document.getElementById('cars-container').classList.remove('hidden');
 });
 
-function expandParagraph(num) {
-  const preview = document.getElementById(`preview-${num}`);
-  const full = document.getElementById(`full-${num}`);
+function showParagraph(num, length) {
+  const para = document.getElementById(`full-${num}`);
+  const fullText = para.textContent;
   const expand = document.getElementById(`para-${num}`);
+  const button = expand.querySelector('a');
+
+  para.textContent = fullText.slice(0, length) + ' [...]';
+
   expand.addEventListener('click', (e) => {
     e.preventDefault();
-    if (full.classList.contains('hidden')) {
-      full.classList.remove('hidden');
-      preview.classList.add('hidden');
-      expand.querySelector('a').textContent = 'Zwiń';
-      expand.querySelector('img').classList.add('rotate-180');
+    para.classList.toggle('short');
+    para.classList.toggle('full');
+    if (para.classList.contains('short')) {
+      para.textContent = fullText.slice(0, length) + ' [...]';
     } else {
-      full.classList.add('hidden');
-      preview.classList.remove('hidden');
-      expand.querySelector('a').textContent = 'Rozwiń';
-      expand.querySelector('img').classList.remove('rotate-180');
+      para.textContent = fullText;
     }
+    button.textContent = button.textContent === 'Rozwiń' ? 'Zwiń' : 'Rozwiń';
+    expand.querySelector('svg').classList.toggle('rotate-180');
+    para.offsetHeight;
   });
 }
-
-expandParagraph('1');
-expandParagraph('2');
+showParagraph('1', 223);
+showParagraph('2', 223);
 
 const menuDiv = document.getElementById('mobile-menu-container');
 const hamburger = document.getElementById('hamburger');

@@ -566,8 +566,8 @@ video {
   left: -50%;
 }
 
-.-top-1\/4 {
-  top: -25%;
+.-top-60 {
+  top: -15rem;
 }
 
 .bottom-0 {
@@ -592,18 +592,6 @@ video {
 
 .top-full {
   top: 100%;
-}
-
-.-top-32 {
-  top: -8rem;
-}
-
-.-top-48 {
-  top: -12rem;
-}
-
-.-top-60 {
-  top: -15rem;
 }
 
 .-z-10 {
@@ -665,8 +653,12 @@ video {
   height: 66.666667%;
 }
 
-.h-3\/4 {
-  height: 75%;
+.h-\[20px\] {
+  height: 20px;
+}
+
+.h-\[4\.5rem\] {
+  height: 4.5rem;
 }
 
 .w-1\/4 {
@@ -781,6 +773,14 @@ video {
   overflow-x: hidden;
 }
 
+.border {
+  border-width: 1px;
+}
+
+.border-b-1 {
+  border-bottom-width: 1px;
+}
+
 .border-t-1 {
   border-top-width: 1px;
 }
@@ -800,6 +800,10 @@ video {
   background-color: rgb(247 247 247 / var(--tw-bg-opacity));
 }
 
+.fill-white {
+  fill: #fff;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -812,11 +816,6 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 .pb-6 {
@@ -839,6 +838,11 @@ video {
   font-family: roboto_condensedregular, sans-serif;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .text-\[21\.5px\] {
   font-size: 21.5px;
 }
@@ -849,10 +853,6 @@ video {
 
 .text-\[40px\] {
   font-size: 40px;
-}
-
-.text-\[76px\] {
-  font-size: 76px;
 }
 
 .font-bold {
@@ -883,10 +883,6 @@ video {
   line-height: 84px;
 }
 
-.leading-\[5\.25rem\] {
-  line-height: 5.25rem;
-}
-
 .-tracking-tight-0\.03 {
   letter-spacing: -0.03em;
 }
@@ -899,7 +895,7 @@ video {
   letter-spacing: -0.05em;
 }
 
-.text-\[\#0147FF\] {
+.text-blue-main {
   --tw-text-opacity: 1;
   color: rgb(1 71 255 / var(--tw-text-opacity));
 }
@@ -912,15 +908,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-blue-main {
-  --tw-text-opacity: 1;
-  color: rgb(1 71 255 / var(--tw-text-opacity));
-}
-
-.underline {
-  text-decoration-line: underline;
 }
 
 .opacity-70 {
@@ -942,6 +929,10 @@ video {
 .brightness-150 {
   --tw-brightness: brightness(1.5);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.duration-300 {
+  transition-duration: 300ms;
 }
 
 @font-face {
@@ -1045,7 +1036,7 @@ video {
 
 .link-active {
   font-family: "Roboto Flex", sans-serif;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 600;
   line-height: 22.5px;
   letter-spacing: -0.02em;
@@ -1059,9 +1050,15 @@ video {
   cursor: pointer;
 }
 
+@media (min-width: 768px) {
+  .link-active {
+    font-size: 15px;
+  }
+}
+
 .link-not-active {
   font-family: "Roboto Flex", sans-serif;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 22.5px;
   letter-spacing: -0.02em;
@@ -1073,6 +1070,12 @@ video {
   cursor: pointer;
   text-decoration-line: underline;
   text-underline-offset: 4px;
+}
+
+@media (min-width: 768px) {
+  .link-not-active {
+    font-size: 15px;
+  }
 }
 
 #hamburger {
@@ -1129,6 +1132,9 @@ video {
     background-color: rgb(247 247 247 / var(--tw-bg-opacity));
     --tw-text-opacity: 1;
     color: rgb(1 71 255 / var(--tw-text-opacity));
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .btn-secondary:hover {
@@ -1137,6 +1143,9 @@ video {
     background-color: rgb(1 71 255 / var(--tw-bg-opacity));
     --tw-text-opacity: 1;
     color: rgb(247 247 247 / var(--tw-text-opacity));
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -1147,6 +1156,14 @@ video {
   line-height: 21px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+  max-height: 4rem;
+  overflow: hidden;
+  transition: max-height 500ms ease;
+}
+
+.para.full {
+  max-height: 10rem;
+  overflow: hidden;
 }
 
 .section-flex {
@@ -1170,11 +1187,19 @@ video {
   line-height: 24px;
 }
 
-.menu-links:hover {
-  --tw-text-opacity: 1;
-  color: rgb(1 71 255 / var(--tw-text-opacity));
-  text-decoration-line: underline;
-  text-underline-offset: 4px;
+@media (min-width: 768px) {
+  .menu-links:hover,
+.bottom-links:hover,
+#cars-gallery:hover,
+#vans-gallery:hover {
+    --tw-text-opacity: 1;
+    color: rgb(1 71 255 / var(--tw-text-opacity));
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
 }
 
 .expand-btn {
@@ -1193,10 +1218,14 @@ video {
   cursor: pointer;
 }
 
-@media (min-width: 640px) {
-  .sm\:text-15px {
-    font-size: 15px;
-  }
+.hover\:border-0:hover {
+  border-width: 0px;
+}
+
+.hover\:transition-\[border\]:hover {
+  transition-property: border;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 @media (min-width: 768px) {
@@ -1218,6 +1247,36 @@ video {
 
   .md\:pt-20 {
     padding-top: 5rem;
+  }
+
+  .md\:text-\[76px\] {
+    font-size: 76px;
+  }
+
+  .md\:hover\:border-blue-main:hover {
+    --tw-border-opacity: 1;
+    border-color: rgb(1 71 255 / var(--tw-border-opacity));
+  }
+
+  .md\:hover\:transition-all:hover {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .group:hover .md\:group-hover\:fill-blue-main {
+    fill: #0147FF;
+  }
+
+  .group:hover .md\:group-hover\:text-blue-main {
+    --tw-text-opacity: 1;
+    color: rgb(1 71 255 / var(--tw-text-opacity));
+  }
+
+  .group:hover .md\:group-hover\:transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
   }
 }
 
@@ -1242,16 +1301,12 @@ video {
     left: 376px;
   }
 
-  .xl\:left-\[698px\] {
-    left: 698px;
+  .xl\:right-\[300px\] {
+    right: 300px;
   }
 
   .xl\:right-\[355px\] {
     right: 355px;
-  }
-
-  .xl\:-top-10 {
-    top: -2.5rem;
   }
 
   .xl\:m-auto {
@@ -1317,16 +1372,6 @@ video {
   .xl\:py-\[88px\] {
     padding-top: 88px;
     padding-bottom: 88px;
-  }
-
-  .xl\:py-\[7\.5rem\] {
-    padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
-  }
-
-  .xl\:py-\[7\2c 5rem\] {
-    padding-top: 7,5rem;
-    padding-bottom: 7,5rem;
   }
 
   .xl\:pt-0 {
