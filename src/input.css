@@ -71,10 +71,10 @@
   @apply text-blue-main bg-light-main border-blue-main;
 }
 .btn-main:hover {
-  @apply md:bg-light-main md:text-blue-main md:border-blue-main md:transition-colors md:duration-200 md:ease-in-out;
+  @apply lg:bg-light-main lg:text-blue-main lg:border-blue-main lg:transition-colors lg:duration-200 lg:ease-in-out;
 }
 .btn-secondary:hover {
-  @apply md:text-light-main md:bg-blue-main md:border-transparent md:transition-colors md:duration-200 md:ease-in-out;
+  @apply lg:text-light-main lg:bg-blue-main lg:border-transparent lg:transition-colors lg:duration-200 lg:ease-in-out;
 }
 
 .para {
@@ -87,7 +87,6 @@
 
 .para.full {
   max-height: 10rem;
-  overflow: hidden;
 }
 
 .section-flex {
@@ -102,7 +101,7 @@
 .bottom-links,
 #cars-gallery,
 #vans-gallery {
-  @apply md:hover:text-blue-main md:hover:underline md:hover:underline-offset-4 md:hover:transition-colors;
+  @apply lg:hover:text-blue-main lg:hover:underline lg:hover:underline-offset-4 lg:hover:transition-colors;
 }
 
 .expand-btn {
